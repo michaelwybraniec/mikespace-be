@@ -1,0 +1,26 @@
+{
+    "database": {
+        "server": "mongodb://localhost:27017/mikespace-be",
+        "authdb": "admin",
+        "username": "admin",
+        "password": "admin123456"
+    },
+    "application": {
+        "port": 6001,
+        "version": 0.2
+    },
+    "output_json": {
+        "success": "",
+        "message": ""
+    },
+    "uploads": {
+        "path": "c:\\travail\\mikespace-be\\uploads\\files\\"
+    },
+    "log": {
+        "LoggerHost": "localhost",
+        "LoggerPort": "7001",
+        "LoggerKey": "",
+        "LogLocalPath": "console.log",
+        "LogExceptionPath": "crash.log"
+    }
+}
