@@ -6,24 +6,29 @@ var userModel = function () {
 
     const userSchema = new mongoose.Schema(
         {
-            // TODO
+            email: { type: String, required: true, unique: true },
+            gender: { type: { enum: ["man", "woman"] }, required: true },
+            account_type: { type: { enum: ["mike", "guest"] }, required: true },
 
-            email: {
-                type: String,
-                required: true,
-                unique: true
+            password: { type: String, required: true },
+            first_name: { type: String, required: false },
+            last_name: { type: String, required: false },
+
+            birth_date: { type: Date, required: true },
+            phone_mobile: { type: String, required: true },
+            address: {
+                street  : { type: String, required: true },
+                city    : { type: String, required: true },
+                postcode: { type: String, required: true },
+                country : { type: String, required: true }
             },
-            password: {
-                type: String,
-                required: true
-            },
-            first_name: {
-                type: String,
-                required: false
-            },
-            last_name: {
-                type: String,
-                required: false
+
+            rating: {
+                avg_criteria_1: { type: Number },
+                avg_criteria_2: { type: Number },
+                avg_criteria_3: { type: Number },
+                avg_criteria_4: { type: Number },
+                avg_criteria_5: { type: Number },
             },
         },
         {

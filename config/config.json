@@ -6,7 +6,7 @@
         "password": "admin123456"
     },
     "application": {
-        "port": 6001,
+        "port": 7001,
         "version": 0.2
     },
     "output_json": {

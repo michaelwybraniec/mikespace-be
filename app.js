@@ -9,6 +9,7 @@ var middlewareError = require('./src/middlewares/errors');
 
 var UserRoutes = require('./src/routes/userRoutes');
 var AuthRoutes = require('./src/routes/authRoutes');
+var UserRoutes = require('./src/routes/userRoutes');
 // ===== yeoman route import hook =====
 
 // ==============================================================================
@@ -82,6 +83,7 @@ app.get('/', (req, res) => { res.status(401).json({ "success": false, "message":
 app.use(app.oauth.authenticate());
 
 app.use(AuthRoutes);
+app.use(UserRoutes);
 app.use(UserRoutes);
 // ===== yeoman route declaration hook =====
 
