@@ -5,7 +5,7 @@ const jwtHandler = (req, res, next) => {
     var privateKey = fs.readFileSync('./private.key', 'utf-8');
     var publicKey = fs.readFileSync('./public.key', 'utf-8');
     let i = "MICHAEL-WYBRANIEC";
-    let s = "michaeuwybraniec@gmail.com";
+    let s = "michauwybraniec@gmail.com";
     let a = "https://www.linkedin.com/in/michaelwybraniec/";
 
     let signOptions = {
