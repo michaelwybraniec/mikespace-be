@@ -88,6 +88,34 @@ const getAllAdvanced = function (filters, successCbk, errorCbk) {
 };
 
 
+
+
+  // Test.aggregate([
+    // {
+      // $match: matchQuery,
+    // },
+    // {
+      // $group: {
+        // _id: { $dateToString: { format: formatDate, date: "$createdAt" } },
+        // countError: { "$sum": { "$cond": [{ "$eq": ["$level", "error"] }, 1, 0] } },
+        // countWarn: { "$sum": { "$cond": [{ "$eq": ["$level", "warn"] }, 1, 0] } },
+        // countInfo: { "$sum": { "$cond": [{ "$eq": ["$level", "info"] }, 1, 0] } },
+        // countDebug: { "$sum": { "$cond": [{ "$eq": ["$level", "debug"] }, 1, 0] } }
+      // }
+    // },
+    // {
+      // $addFields: { date: "$_id" }
+    // },
+    // {
+      // $sort: { date: 1, }
+    // },
+    // {
+      // $project: { _id: 0 }
+    // }
+  // ],
+
+
+
 module.exports = {
   getAllAdvanced: getAllAdvanced
 }
