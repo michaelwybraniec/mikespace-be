@@ -3,10 +3,10 @@ var router = express.Router();
 
 var middlewareJwt = require('../middlewares/jwt');
 
-var elasticsearch = require('elasticsearch');
+/* var elasticsearch = require('elasticsearch');
 var client = new elasticsearch.client({
   host: 'localhost:9200'
-})
+})*/
 
 
 router.post('/test', (req, res) => {
@@ -16,11 +16,12 @@ router.post('/test', (req, res) => {
     });
   }
 
-  client.index({
+  /* client.index({
     index: "test",
     type: "bytype",
     id: req.body.id,
     body: req.body
+
   }, function (err, resp, status) {
     if (err) {
       console.log(err);
@@ -29,7 +30,7 @@ router.post('/test', (req, res) => {
         message: "POST test workout call succeded"
       })
     }
-  });
+  });*/
 })
 
 // router.get('/user', middlewareJwt.jwtHandler, function (req, res) {

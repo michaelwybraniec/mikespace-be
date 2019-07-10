@@ -9,7 +9,7 @@ var middlewareError = require('./src/middlewares/errors');
 
 var UserRoutes = require('./src/routes/userRoutes');
 var AuthRoutes = require('./src/routes/authRoutes');
-var UserRoutes = require('./src/routes/userRoutes');
+var ElasticRoutes = require('./src/routes/elasticRoutes');
 // ===== yeoman route import hook =====
 
 // ==============================================================================
@@ -84,7 +84,7 @@ app.use(app.oauth.authenticate());
 
 app.use(AuthRoutes);
 app.use(UserRoutes);
-app.use(UserRoutes);
+app.use(ElasticRoutes);
 // ===== yeoman route declaration hook =====
 
 // ==============================================================================
