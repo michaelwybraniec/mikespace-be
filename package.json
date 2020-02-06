@@ -11,7 +11,7 @@
         "boom": "^7.3.0",
         "chalk": "^2.4.2",
         "cors": "^2.8.5",
-        "elasticsearch": "^16.2.0",
+        "elasticsearch": "^16.5.0",
         "exec": "^0.2.1",
         "express-oauth-server": "^2.0.0",
         "fingerprint": "0.0.1",
