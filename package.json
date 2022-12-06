@@ -7,7 +7,7 @@
         "algs": "0.0.0",
         "assert-plus": "^1.0.0",
         "bcrypt": "^3.0.4",
-        "body-parser": "^1.18.3",
+        "body-parser": "^1.20.1",
         "boom": "^7.3.0",
         "chalk": "^2.4.2",
         "cors": "^2.8.5",
