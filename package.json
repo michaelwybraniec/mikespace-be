@@ -6,7 +6,7 @@
     "dependencies": {
         "algs": "0.0.0",
         "assert-plus": "^1.0.0",
-        "bcrypt": "^3.0.4",
+        "bcrypt": "^5.0.1",
         "body-parser": "^1.18.3",
         "boom": "^7.3.0",
         "chalk": "^2.4.2",
